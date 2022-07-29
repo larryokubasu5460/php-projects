@@ -8,16 +8,16 @@ if(isset($_POST["submit"])){
     $pwd = $_POST["pwd"];
 
 
-    //instantiate signup controller
+    //instantiate Login controller
     include "../classes/dbh.classes.php";
     include "../classes/login.classes.php";
     include "../classes/login-contr.classes.php";
 
 
-    $newUser = new LoginContr($uid,$pwd);
+    $login = new LoginContr($uid,$pwd);
    
     //run error handlers and user signup
-    $newUser->loginUser();
+    $login->loginUser();
     //going back to front page
     header("location:../index.php?error=none");
 }

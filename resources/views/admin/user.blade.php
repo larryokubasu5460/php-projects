@@ -12,7 +12,7 @@
   <div class="container-scroller">
   @include("admin.navbar")
     <div style="position:relative; top:60px; right:-150px;">
-        <table style="background-color:grey;border:3px;">
+        <table style="background-color:black;border:3px;">
             <tr>
                 <th style="padding:30px;">Name</th>
                 <th style="padding:30px;">Email</th>
